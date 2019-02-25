@@ -52,7 +52,9 @@
                 resolve('异步任务1');
             },1000)
         });
-
+        console.log('study2添加内容');
+        console.log('study2添加内容');
+        console.log('study2添加内容');
         let p2 = new Promise(function(resolve,reject){
             setTimeout(()=>{
                 resolve('异步任务2');
@@ -61,7 +63,7 @@
 
         let p3 = new Promise(function(resolve,reject){
             setTimeout(() => {
-                resolve('异步任务3')
+                resolve('异步任务333')
             }, 3000);
         })
 
@@ -69,6 +71,8 @@
             console.log(data)
         })
         console.log('study1修改的');
+
+        console.log('study2添加内容');
     </script>
     <script src="./webpack-demo/dist/main.js">
         
